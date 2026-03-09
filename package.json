@@ -1,5 +1,5 @@
 {
-  "Nasagentbridge": {
+  "nasagentbridge": {
     "name": "NAS Agent Bridge",
     "description": "为外部 NAS Agent 提供 MoviePilot 事件桥接能力",
     "version": "1.0",
@@ -12,3 +12,4 @@
     }
   }
 }
+
