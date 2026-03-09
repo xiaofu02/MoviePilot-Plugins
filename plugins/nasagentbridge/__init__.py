@@ -4,11 +4,10 @@ from app.plugins import _PluginBase
 
 
 class Nasagentbridge(_PluginBase):
-    # 插件基础信息
     plugin_name = "NAS Agent Bridge"
     plugin_desc = "为外部 NAS Agent 提供 MoviePilot 事件桥接能力"
     plugin_icon = "https://raw.githubusercontent.com/jxxghp/MoviePilot-Plugins/main/icons/plugin.png"
-    plugin_version = "1.0.0"
+    plugin_version = "1.0"
     plugin_author = "XIAO FU"
     author_url = ""
     plugin_config_prefix = "nasagentbridge_"
@@ -30,9 +29,6 @@ class Nasagentbridge(_PluginBase):
         pass
 
     def get_form(self) -> tuple[list, dict]:
-        """
-        插件配置页
-        """
         return [
             {
                 "component": "VForm",
@@ -60,24 +56,18 @@ class Nasagentbridge(_PluginBase):
         }
 
     def get_page(self) -> List[dict]:
-        """
-        插件详情页
-        """
         return [
             {
                 "component": "VAlert",
                 "props": {
                     "type": "info",
                     "variant": "tonal",
-                    "text": "NAS Agent Bridge 已加载。下一步可继续接入事件监听和对外 API。"
+                    "text": "NAS Agent Bridge 已加载。"
                 }
             }
         ]
 
     def get_api(self) -> List[dict]:
-        """
-        对外暴露 API
-        """
         return [
             {
                 "path": "/status",
@@ -96,19 +86,10 @@ class Nasagentbridge(_PluginBase):
         }
 
     def get_command(self) -> List[Dict[str, Any]]:
-        """
-        暂不提供命令
-        """
         return []
 
     def get_service(self) -> List[Dict[str, Any]]:
-        """
-        暂不注册后台服务
-        """
         return []
 
     def get_dashboard(self, key: str, **kwargs) -> List[dict]:
-        """
-        暂不提供仪表板卡片
-        """
         return []
