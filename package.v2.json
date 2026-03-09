@@ -1,0 +1,18 @@
+{
+  "name": "nas-agent-plugin-pack",
+  "title": "NAS Agent Plugin Pack",
+  "description": "MoviePilot bridge plugins for NAS Agent",
+  "version": "1.0.0",
+  "author": "XIAO FU",
+  "plugins": [
+    {
+      "name": "Nasagentbridge",
+      "title": "NAS Agent Bridge",
+      "description": "为外部 NAS Agent 提供 MoviePilot 事件桥接能力",
+      "version": "1.0.0",
+      "icon": "https://raw.githubusercontent.com/jxxghp/MoviePilot-Plugins/main/icons/plugin.png",
+      "author": "XIAO FU",
+      "level": 1
+    }
+  ]
+}
