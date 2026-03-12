@@ -2,11 +2,11 @@
   "MpControl": {
     "name": "MoviePilot 控制插件",
     "description": "为 CLI / Agent 提供搜索、订阅、下载、状态 API",
+    "labels": "工具,控制,Agent",
     "version": "0.1.0",
     "icon": "https://raw.githubusercontent.com/xiaofu02/MoviePilot-Plugins/main/icons/mpcontrol.png",
     "author": "XIAO FU",
     "level": 1,
-    "v2": true,
     "history": {
       "v0.1.0": "初始版本：search / subscribe / download / status"
     }
